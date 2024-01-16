@@ -1,3 +1,4 @@
+##HOW TO RUN PROJECT
 ## Frontend
 
 ```bash
