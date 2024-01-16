@@ -8,7 +8,7 @@ function ProgramDetails({ programs, setPrograms }) {
     domain: "",
     program_type: "",
     registrations_status: false,
-    description: "",
+    descriptions: "",
     placement_assurance: false,
     image_url: "",
     university_name: "",
@@ -116,11 +116,11 @@ function ProgramDetails({ programs, setPrograms }) {
         </div>
 
         <div>
-          <label htmlFor="description">Description:</label>
+          <label htmlFor="descriptions">Description:</label>
           <textarea
-            id="description"
-            name="description"
-            value={newProgram.description}
+            id="descriptions"
+            name="descriptions"
+            value={newProgram.descriptions}
             onChange={handleInputChange}
             className="w-full border border-gray-300 rounded p-2"
           />
