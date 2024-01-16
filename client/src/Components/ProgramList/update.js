@@ -26,7 +26,7 @@ function Update({item}) {
         try {
             
           const response = await axios.put(
-            `http://localhost:3001/programs/${item.program_id}`,
+            `https://programsserver.onrender.com/programs/${item.program_id}`,
             updatedProgram
           );
           console.log(response.data.message);
