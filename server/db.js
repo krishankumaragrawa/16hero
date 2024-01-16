@@ -2,12 +2,8 @@ const Pool = require("pg").Pool;
 const { db, user, password } = require("./config");
 
 const pool = new Pool({
-  user: user,
-  password: password,
-  host: "localhost",
-  port: 5432,
-  database: db,
-});
+  connectionString: process.env.POSTGRES_URL + "?sslmode=require",
+})
 
 module.exports = pool;
 //client\src\Components\Headers\Headers.js
