@@ -32,7 +32,7 @@ function ProgramDetails({ programs, setPrograms }) {
   const addProgram = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/addprograms",
+        "https://programsserver.onrender.com/addprograms",
         newProgram
       );
       // Handle the response as needed
