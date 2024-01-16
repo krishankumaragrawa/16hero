@@ -1,4 +1,4 @@
-##HOW TO RUN PROJECT
+#HOW TO RUN PROJECT#
 Frontend
 ```bash
 cd client
