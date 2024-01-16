@@ -1,11 +1,11 @@
 ##HOW TO RUN PROJECT
-## Frontend
-
+Frontend
 ```bash
 cd client
 npm install
 npm start
-##backend
+
+ Backend
 cd server
 npm install
 node server.js
