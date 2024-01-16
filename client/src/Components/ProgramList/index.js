@@ -8,7 +8,7 @@ const ProgramList = ({ programs, setPrograms }) => {
   // Delete program function
   const deleteProgram = async (id) => {
     try {
-      await axios.delete(`http://localhost:3001/programs/${id}`);
+      await axios.delete(`https://programsserver.onrender.com/programs/${id}`);
       setPrograms(programs.filter((program) => program.program_id !== id));
     } catch (error) {
       console.error("Error deleting program:", error);
@@ -18,7 +18,7 @@ const ProgramList = ({ programs, setPrograms }) => {
   useEffect(() => {
     const fetchPrograms = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/programs");
+        const response = await axios.get("https://programsserver.onrender.com/programs");
         setPrograms(response.data);
       } catch (error) {
         console.error("Error fetching programs:", error);
